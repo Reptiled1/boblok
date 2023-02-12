@@ -176,7 +176,7 @@ end
 local function servercheck(plr)
     local plrgroups = game:GetService("GroupService"):GetGroupsAsync(plr.UserId)
     for _,v in pairs(plrgroups) do
-        if ((v.Id == 1174414) and (v.Rank >= 14)) or ((v.Id == 3880488) and (v.Rank >= 245)) or ((v.Id == 3497030) and (v.Rank >= 150)) or ((v.Id == 3496996) and (v.Rank >= 235)) or ((v.Id == 4809530) and (v.Rank >= 120)) or ((v.Id == 4734688) and (v.Rank >= 90)) or ((v.Id == 3497000) and (v.Rank >= 8)) then
+        if ((v.Id == 1174414) and (v.Rank >= 14)) or ((v.Id == 3880488) and (v.Rank >= 245)) or ((v.Id == 3497030) and (v.Rank >= 150)) or ((v.Id == 3496996) and (v.Rank >= 235)) or ((v.Id == 4809530) and (v.Rank >= 120)) or ((v.Id == 4734688) and (v.Rank >= 80)) or ((v.Id == 3497000) and (v.Rank >= 8)) then
             return true
         end
     end
