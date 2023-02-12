@@ -49,23 +49,6 @@ local function doorfunc()
     end
 end
 
-local function robsafe()
-    -- game:GetService("ReplicatedStorage"):WaitForChild("Systems"):WaitForChild("Raid System"):WaitForChild("Events"):WaitForChild("OnRaidStart"):FireServer("Safe")
-
-    -- game:GetService("ReplicatedStorage"):WaitForChild("Systems"):WaitForChild("Raid System"):WaitForChild("Events"):WaitForChild("OnRaidInteract"):FireServer("Safe")
-
-end
-
-local function spamgas()
-    local args = {
-        [1] = Vector3.new(0.16950833797454834, 0.15180383622646332, -0.9737671613693237),
-        [2] = "Tear Gas Nade",
-        [3] = 10
-    }
-    
-    game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Grenades"):WaitForChild("Remotes"):WaitForChild("ThrowGrenade"):FireServer(unpack(args))
-    
-end
 
 local function damageall()
     for _,v in pairs(Players:GetChildren()) do
@@ -97,11 +80,6 @@ local function gettools()
     LocalPlayerChar.HumanoidRootPart.CFrame = currentpos
 end
 
---[[
-local function infectall()
-    game:GetService("Players"):WaitForChild("G870N70L85HHParker12"):WaitForChild("Backpack"):WaitForChild("Infect"):WaitForChild("Infect_Melee"):FireServer()
-end
---]]
 
 local function spamreactor()
     game:GetService("ReplicatedStorage"):WaitForChild("Systems"):WaitForChild("Raid System"):WaitForChild("Events"):WaitForChild("OnRaidStart"):FireServer("Reactor")
